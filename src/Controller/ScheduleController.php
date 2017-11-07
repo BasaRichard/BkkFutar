@@ -1,5 +1,5 @@
 <?php
-    require_once('DummyScheduleService.php');
+    require_once('Modell/DummyScheduleService.php');
 
     // 1. bemenő adatok, validálni
     if(!isset($_GET['stop']) || !preg_match('/^[0-9]*$/',$_GET['stop'])) {
