@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Schedule</title>
-    <link href="Style/style.css" rel="stylesheet" type="text/css" />
+    <link href="../View/Style/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -17,9 +17,7 @@
         }
     ?>
 
-M3   Újpest központ  1'
-M3A  Árpád üzletház  2'
-15   Gyöngyösi utca  5'
+
 
 </pre>
 
