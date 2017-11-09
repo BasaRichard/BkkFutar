@@ -6,11 +6,11 @@
         }
 
         public function getDepartures($stop) {
-            $content = file_get_contents('data.csv');
+            $content = file_get_contents('../Modell/data.txt');
             $rows = explode("\r\n", $content);
             $output = array();
             foreach($rows as $row){
-                $explodedRow = explode(',',$row);
+                $explodedRow = explode(';',$row);
                 $output[] = array(
                     'line' => $explodedRow[0],
                     'destination' => $explodedRow[1],

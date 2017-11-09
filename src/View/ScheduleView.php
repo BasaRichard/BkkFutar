@@ -7,8 +7,7 @@
 </head>
 <body>
 
-<pre id="info-screen">
-    <?php
+<pre id="info-screen"><?php
         foreach($departures as $departure) {
             print $departure['line']. " ";
             print $departure['destination']. " ";

@@ -1,5 +1,5 @@
 <?php
-    require_once('../Modell/DummyScheduleService.php');
+    require_once('../Modell/TextFileScheduleService.php');
 
     // 1. bemenő adatok, validálni
     if(!isset($_GET['stop']) || !preg_match('/^[0-9]*$/',$_GET['stop'])) {
@@ -9,7 +9,7 @@
     }
 
     // 2. model-beli osztálynak valami függvényét
-    $scheduleService = new DummyScheduleService();
+    $scheduleService = new TextFileScheduleService();
     $departures = $scheduleService->getDepartures($stop);
 
     // 3. meghívunk egy view-t
